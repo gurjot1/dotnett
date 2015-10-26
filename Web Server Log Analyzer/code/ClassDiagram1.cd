@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="WSLA.AboutForm">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AboutForm.cs</FileName>
+      <HashCode>AAAAIBAgACACABAAAACAAAACAAAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MainForm" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="WSLA.CompactingForm">
+    <Position X="2.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CompactingForm.cs</FileName>
+      <HashCode>AAAAAAAAACAAABAAAACEAAACAAAAAAAAQAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="WSLA.Database">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Database.cs</FileName>
+      <HashCode>AAAAAAQAAAAAIAEAAAAAAAgAAAAAAAAAAAAAAICAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="WSLA.DecodeIPAddresses">
+    <Position X="7" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DecodeIPAddresses.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAABA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="WSLA.ExtractURL">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ExtractURL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WSLA.FTPException">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FTP.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="WSLA.FTP">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FTP.cs</FileName>
+      <HashCode>AREAgAAAAgAAAQAAAAAAQAAAAABYAAAAAAEACAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FTPException" />
+      <Property Name="ProcessUtils" />
+      <Property Name="Globals" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WSLA.Globals">
+    <Position X="4.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Globals.cs</FileName>
+      <HashCode>AAAQAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="WSLA.MainForm">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MainForm.cs</FileName>
+      <HashCode>AGQFiQjRgmUIYVQAMoCQOeGy6kECHAEAjqsCRQHkBDA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CompactingForm" />
+      <Property Name="QueryUtils" />
+      <Property Name="Database" />
+      <Property Name="SettingsForm" />
+      <Property Name="ExtractURL" />
+      <Property Name="WebServerLog" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="ExtractURL" Type="WSLA.ExtractURL">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.374" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="WSLA.QueryUtils">
+    <Position X="4.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>queryutils.cs</FileName>
+      <HashCode>AAABAAACEEAAAAAAAAAAEAABAAAAAAAAAAABAAAAAAg=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="WSLA.SettingsForm">
+    <Position X="6.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SettingsForm.cs</FileName>
+      <HashCode>EAAAABAIACAAApAgABCAAAEiACAgAAAAAAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="WSLA.SettingsForm.Settings" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SettingsForm.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="WSLA.WebServerLog">
+    <Position X="2.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>WebServerLog.cs</FileName>
+      <HashCode>AAAAkgAAAAQAAABAAAAoAAAAAAAAAAoAAgAEAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DecodeIPAddresses" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="DecodeIPAddresses" Type="WSLA.DecodeIPAddresses" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.25" Y="8.091" />
+        <Point X="4.417" Y="8.091" Type="JumpStart" />
+        <Point X="4.583" Y="8.091" Type="JumpEnd" />
+        <Point X="4.688" Y="8.091" />
+        <Point X="4.688" Y="7.188" />
+        <Point X="6.635" Y="7.187" Type="JumpStart" />
+        <Point X="6.802" Y="7.188" Type="JumpEnd" />
+        <Point X="7.875" Y="7.188" />
+        <Point X="7.875" Y="6.613" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="PU.ProcessUtils">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ProcessUtils.cs</FileName>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+</ClassDiagram>
